@@ -34,4 +34,4 @@ after_success:
   - chmod 600 ~/.ssh/travis-deploy-key.rsa
   - ssh-add ~/.ssh/travis-deploy-key.rsa
   - echo -e "Host adams.ezheidtmann.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-  - rsync -av _site/ deploy@adams.ezheidtmann.com
+  - rsync -av _site/ deploy@adams.ezheidtmann.com:
